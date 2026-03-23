@@ -1049,7 +1049,7 @@
     function showKitForm(uid) {
       var overlay = document.getElementById('kit-modal-overlay');
       var content = document.getElementById('kit-modal-content');
-      content.innerHTML = '<div style="text-align:center;padding:3rem 2rem;"><p style="font-family:\'Cormorant Garamond\',serif;font-size:1.1rem;color:#6B4C35;margin-bottom:1.5rem;">Enter your email to receive this guide.</p><iframe src="https://spirit-frame.kit.com/' + uid + '" width="100%" height="420" frameborder="0" style="border:none;"></iframe></div>';
+      content.innerHTML = '<iframe src="https://spirit-frame.kit.com/' + uid + '" width="100%" height="600" frameborder="0" style="border:none;display:block;"></iframe>';
       overlay.style.display = 'flex';
     }
     document.getElementById('kit-modal-overlay').addEventListener('click', function(e) {
