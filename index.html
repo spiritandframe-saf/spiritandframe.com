@@ -653,6 +653,7 @@
         <li><a href="#capsules">The Capsules</a></li>
         <li><a href="#process">Process</a></li>
         <li><a href="#archive">The Archive</a></li>
+        <li><a href="journal.html">The Journal</a></li>
         <li><a href="https://form.typeform.com/to/auSHWw34" target="_blank">Start Your Capsule</a></li>
       </ul>
     </div>
@@ -1048,12 +1049,7 @@
     function showKitForm(uid) {
       var overlay = document.getElementById('kit-modal-overlay');
       var content = document.getElementById('kit-modal-content');
-      content.innerHTML = '';
-      var script = document.createElement('script');
-      script.async = true;
-      script.setAttribute('data-uid', uid);
-      script.src = 'https://spirit-frame.kit.com/' + uid + '/index.js';
-      content.appendChild(script);
+      content.innerHTML = '<div style="text-align:center;padding:3rem 2rem;"><p style="font-family:\'Cormorant Garamond\',serif;font-size:1.1rem;color:#6B4C35;margin-bottom:1.5rem;">Enter your email to receive this guide.</p><iframe src="https://spirit-frame.kit.com/' + uid + '" width="100%" height="420" frameborder="0" style="border:none;"></iframe></div>';
       overlay.style.display = 'flex';
     }
     document.getElementById('kit-modal-overlay').addEventListener('click', function(e) {
