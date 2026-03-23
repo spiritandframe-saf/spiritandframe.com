@@ -170,6 +170,26 @@
     .process-step { padding: 2rem; }
     .process-number { font-family: var(--serif); font-size: 3rem; color: var(--terracotta); opacity: 0.3; margin-bottom: 1rem; }
     .process-title { font-family: var(--serif); font-size: 1.2rem; color: var(--brown-dark); margin-bottom: 0.8rem; }
+
+    /* CAPTURED */
+    .captured { padding: 6rem 5rem; background: var(--brown-dark); text-align: center; }
+    .captured-header { margin-bottom: 4rem; }
+    .captured-header .section-label { color: var(--terracotta); }
+    .captured-header .section-title { color: var(--cream); }
+    .captured-header .section-title em { color: var(--terracotta-light); }
+    .captured-sub { font-family: var(--serif); font-style: italic; font-size: 1rem; color: var(--muted); max-width: 520px; margin: 0 auto; line-height: 1.75; }
+    .captured-placeholder { display: flex; justify-content: center; align-items: center; padding: 4rem 0 2rem; }
+    .captured-placeholder-inner { display: flex; align-items: center; gap: 2.5rem; }
+    .captured-placeholder-rule { display: block; width: 60px; height: 1px; background: rgba(107,76,53,0.4); }
+    .captured-placeholder-text { font-family: var(--serif); font-style: italic; font-size: 1.05rem; color: var(--muted); line-height: 1.8; }
+
+    /* CAPTURED — client cards (for future use) */
+    .captured-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; margin-top: 3rem; }
+    .captured-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(107,76,53,0.2); padding: 0; overflow: hidden; }
+    .captured-card-img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
+    .captured-card-body { padding: 1.5rem; }
+    .captured-card-name { font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 0.6rem; }
+    .captured-card-quote { font-family: var(--serif); font-style: italic; font-size: 0.95rem; color: var(--muted); line-height: 1.7; }
     .process-desc { font-size: 0.85rem; line-height: 1.75; color: var(--muted); }
 
     /* THINGS TO KNOW */
@@ -291,6 +311,7 @@
       <li><a href="#studio">The Studio</a></li>
       <li><a href="#capsules">Capsules</a></li>
       <li><a href="#process">Process</a></li>
+      <li><a href="#captured">Captured</a></li>
       <li><a href="#archive">The Archive</a></li>
       <li><a href="journal.html">The Journal</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -493,6 +514,22 @@
     </div>
   </section>
 
+  <!-- CAPTURED -->
+  <section class="captured" id="captured">
+    <div class="captured-header">
+      <p class="section-label">Captured</p>
+      <h2 class="section-title">Families who trusted us<br>with their <em>story</em></h2>
+      <p class="captured-sub">Each capsule begins with a family and ends with something that outlasts a lifetime. These are some of theirs.</p>
+    </div>
+    <div class="captured-placeholder">
+      <div class="captured-placeholder-inner">
+        <span class="captured-placeholder-rule"></span>
+        <p class="captured-placeholder-text">The first capsules are being delivered.<br>This space is for them.</p>
+        <span class="captured-placeholder-rule"></span>
+      </div>
+    </div>
+  </section>
+
   <!-- THINGS TO KNOW -->
   <section class="things" id="things">
     <p class="section-label">Before You Begin</p>
@@ -652,6 +689,7 @@
         <li><a href="#studio">The Studio</a></li>
         <li><a href="#capsules">The Capsules</a></li>
         <li><a href="#process">Process</a></li>
+        <li><a href="#captured">Captured</a></li>
         <li><a href="#archive">The Archive</a></li>
         <li><a href="journal.html">The Journal</a></li>
         <li><a href="https://form.typeform.com/to/auSHWw34" target="_blank">Start Your Capsule</a></li>
